@@ -31,7 +31,9 @@ export async function checkNetwork(provider) {
   }
   return false;
 }
-
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 export function getWeth(address, signer) {
   return new Contract(address, ERC20.abi, signer);
 }
@@ -141,7 +143,7 @@ export async function swapTokens(
 
   await token1.approve(routerContract.address, amountIn);
   const wethAddress = await routerContract.WETH();
-
+  await sleep(30000);
   if (address1 === wethAddress) {
     // Eth -> Token
     await routerContract.swapExactETHForTokens(

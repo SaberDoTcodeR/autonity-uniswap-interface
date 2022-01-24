@@ -16,6 +16,9 @@ const PAIR = require("../build/IUniswapV2Pair.json");
 //    `accountAddress` - An Ethereum address of the current user's account
 //    `provider` - The current provider
 //    `signer` - The current signer
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 export async function addLiquidity(
   address1,
   address2,
@@ -43,7 +46,10 @@ export async function addLiquidity(
   const deadline = ethers.BigNumber.from(time);
 
   await token1.approve(routerContract.address, amountIn1);
+  await sleep(30000);
+
   await token2.approve(routerContract.address, amountIn2);
+  await sleep(30000);
 
   const wethAddress = await routerContract.WETH();
 
@@ -144,6 +150,7 @@ export async function removeLiquidity(
   const pair = new Contract(pairAddress, PAIR.abi, signer);
 
   await pair.approve(routerContract.address, liquidity);
+  await sleep(30000);
 
   console.log([
     address1,
