@@ -62,10 +62,7 @@ function Liquidity() {
         justifyContent="center"
         alignItems="flex-end"
       >
-        <p>
-          Clearmatics Autonity Uniswap | Get AUT for use in the bakerloo testnet{" "}
-          <a href="https://faucet.bakerloo.autonity.network/">here</a>
-        </p>
+      
       </Grid>
     </div>
   );

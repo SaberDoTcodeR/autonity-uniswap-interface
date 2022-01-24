@@ -9,19 +9,14 @@ const AUTONITYCoins = [
     address: "", // Weth address is fetched from the router
   },
   {
-    name: "Token A",
+    name: "Alice",
     abbr: "TA",
     address: "0xF6Ca785c9a3A5bbdb23FdF5bEEC4F77DB2f4B220",
   },
   {
-    name: "Token B",
+    name: "BOB",
     abbr: "TB",
     address: "0x659A4775a19837c3C79993df611E7EEcC0b5C200",
-  },
-  {
-    name: "Token C",
-    abbr: "WETH",
-    address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
   }
 ]
 
