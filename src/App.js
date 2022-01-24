@@ -33,12 +33,12 @@ function App() {
             <NarBar />
             <Route
               exact
-              path="/autonity-uniswap-interface/"
+              path="/interface/"
               component={CoinSwapper}
             />
             <Route
               exact
-              path="/autonity-uniswap-interface/liquidity"
+              path="/interface/liquidity"
               component={Liquidity}
             />
           </ThemeProvider>

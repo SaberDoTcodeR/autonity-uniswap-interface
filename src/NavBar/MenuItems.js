@@ -1,12 +1,12 @@
 export const MenuItems = [
   {
     title: "Swap",
-    url: "/autonity-uniswap-interface/",
+    url: "/interface/",
     cName: "nav-links",
   },
   {
     title: "Liquidity",
-    url: "/autonity-uniswap-interface/liquidity",
+    url: "/interface/liquidity",
     cName: "nav-links",
   },
 ];
