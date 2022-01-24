@@ -25,9 +25,7 @@
     "@material-ui/icons": "^4.11.2",
     "prop-types": "^15.7.2",
     "notistack": "^1.0.10"
-  },
-  "homepage": "https://clearmatics.github.io/autonity-uniswap-interface/",
-  "scripts": {
+  },  "scripts": {
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
